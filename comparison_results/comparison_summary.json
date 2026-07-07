@@ -1,0 +1,13 @@
+{
+  "monte_carlo": {
+    "num_runs": 100,
+    "num_blocks_mean": 4.2,
+    "num_blocks_median": 4.0,
+    "num_blocks_std": 0.5318160234783105,
+    "cells_mean": 403.0,
+    "compression_ratio_mean": 97.39166666666668,
+    "mean_flux_mean": 23.600278375700313,
+    "mean_flux_std": 18.570057703288782,
+    "two_block_fraction": 0.0
+  }
+}

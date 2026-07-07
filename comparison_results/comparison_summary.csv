@@ -1,0 +1,2 @@
+,num_runs,num_blocks_mean,num_blocks_median,num_blocks_std,cells_mean,compression_ratio_mean,mean_flux_mean,mean_flux_std,two_block_fraction
+monte_carlo,100,4.2,4.0,0.5318160234783105,403.0,97.39166666666668,23.600278375700313,18.570057703288782,0.0
