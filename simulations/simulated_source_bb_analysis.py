@@ -19,7 +19,7 @@ from typing import Dict, List, Tuple, Optional
 from dataclasses import dataclass
 import seaborn as sns
 from scipy import stats
-from pylib import simulated_source_data
+from simulations import simulated_source_data
 
 from simulated_source_data import (
     SimulatedSourceDatabase,
