@@ -15,7 +15,7 @@ Features
 - Save trial-level CSV and summary plots.
 
 Usage examples:
-  python analyze_block_confusion.py --input ./wtlike_sim.pkl --source 4FGL_J0001 --n_trials 2000 --step_sizes 1.5 2.0 --n_steps 1 2
+  [[10-30-26]] --input ./wtlike_sim.pkl --source 4FGL_J0001 --n_trials 2000 --step_sizes 1.5 2.0 --n_steps 1 2
   python analyze_block_confusion.py --n_trials 1000 --synthetic --n_bins 100 --source_id synthetic_01
 
 Author: assistant (combined/adapted)

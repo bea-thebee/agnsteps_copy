@@ -1,7 +1,12 @@
 {
     "folders": [
         {
+            "name": "agnsteps_copy",
             "path": "."
+        },
+        {
+            "name": "wtlike-data",
+            "path": "../work/wtlike-data"
         }
     ]
 }
