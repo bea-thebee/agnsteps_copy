@@ -33,10 +33,50 @@ ratio 1.76
 The difference between the MJD of the step of 30 and 29.5 is actually very slightly LARGER than that of the 30 and 29 day bins, being **1452.5 MJD**. This either suggests an incredibly non-linear relationship, or an error in the code when it comes to dealing in floats. First, let's shrink the margin more. 
 
 ### 29.75 Day Bins
-![alt text](image-1.png)
+![alt text](overview_images/image-1.png)
 Single step observed at MJD 57241.5, 
 ratio 1.75
 
 This time it is a difference of **1401.5 MJD**. Exactly 6.5 MJD smaller of a difference than the initial 29-30 difference. But, progress is still progress. 
 
 At about 29.9 days, the difference increases again, then decreases once more. The sheer variability in these results is frankly kind of insane, and I think it may suggest an issue with floats more than anything else. Future plans are to try this with a larger base bin size and see if differences stepping down by 1 day are the same, or if it's a percent of the base that causes those numbers. Or even if larger bin size means a more consistient change in the decrease 
+
+# Larger Bin Size Tests
+At this point, it seemed wiser to test larger bin sizes instead, so I began testing with 60 and 90 day bins instead. 
+
+## 60 Day Bin Deviation
+
+### Base: 60 Day Bin 
+![alt text](overview_images/image-2.png)
+Single step observed at MJD 58643.0, 
+ratio 1.68
+
+### 59 Days
+![alt text](overview_images/image-3.png)
+Single step observed at MJD 58636.0, 
+ratio 1.68
+
+This difference for one day is much smaller, being only 8 days. However, at 61 days, we get this result:
+![alt text](overview_images/image-4.png)
+Single step observed at MJD 57245.0, 
+ratio 1.75
+
+For 61 days the difference is more than 1000 compared to 60 days. But then at 62 days it returns to a much smaller difference. 
+
+## 90 Day Bin Deviation 
+![alt text](overview_images/image-5.png)
+Single step observed at MJD 58643.0, 
+ratio 1.67
+
+### 89 Days
+![alt text](overview_images/image-6.png)
+Single step observed at MJD 58510.0, 
+ratio 1.64
+
+Once again the difference is incremental. Then the 91 Day gets weird again with another difference of 1000+. Once again, it returns to normality at 92. 
+
+## Plots
+I added and subtracted 10 from each base and plotted the step times of each one against the bin size
+![alt text](overview_images/image-7.png)
+![alt text](overview_images/image-9.png)
+![alt text](overview_images/image-8.png)
